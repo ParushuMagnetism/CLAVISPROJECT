@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.food-munch-logo {
+    width: 80px;
+    height: 70px;
+}
+
+#navItem1 {
+    color: blue;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: blue;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: blue;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: blue;
+    font-family: "Roboto";
+}
+
+#navItem5 {
+    color: blue;
+    font-family: "Roboto";
+}
+
+.banner-section-bg-container {
+    background-color: #2E2E2E;
+}
+
+
+.banner-caption {
+    color: #f5f7fa;
+    font-family: "red serifs";
+    font-size: 100%;
+    font-weight: 300;
+}
+
+.custom-button {
+    color: white;
+    background-image: linear-gradient(#d0b200, #a58d00);
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.custom-outline-button {
+    color: #d0b200;
+    background-color: transparent;
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d0b200;
+    border-radius: 8px;
+}
+
+.wcu-section {
+    background-color: #f9fbfe;
+}
+
+.wcu-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.wcu-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.wcu-card {
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.wcu-card-image {
+    width: 87px;
+    height: 90px;
+}
+
+.wcu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.wcu-card-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.offers {
+    color: #323f4b;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.explore-menu-section {
+    background-color: white;
+}
+
+.menu-section-heading {
+    color: skyblue;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 700;
+    margin: 16px;
+}
+
+.menu-item-image {
+    border-radius: 16px;
+}
+
+.menu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.menu-item-link {
+    color: #d0b200;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-item-card {
+    border-radius: 16px;
+}
+
+.healthy-food-section {
+    background-color: #f9fbfe;
+}
+
+.healthy-food-section-img {
+    width: 270px;
+}
+
+.healthy-food-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.healthy-food-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.delivery-and-payment-section {
+    background-color: white;
+}
+
+.delivery-and-payment-section-img {
+    width: 270px;
+}
+
+.delivery-and-payment-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.delivery-and-payment-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.payment-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+}
+
+.thanking-customers-section {
+    background-image: radial-gradient(#fff8db, #fae38c);
+}
+
+.thanking-customers-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.thanking-customers-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.thanking-customers-section-img {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.thanking-customers-section-modal-title {
+    color: #d0b200;
+    font-weight: 800;
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+.footer-section {
+    background-color: #0d2436;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+/* General Styles */
+
+
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #fff;
+
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Timeline Item Styling */
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+    /* Apply floating animation */
+}
+
+.timeline-item .content {
+    width: 30%;
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.timeline-item.left .content {
+    text-align: right;
+}
+
+.timeline-item.right .content {
+    text-align: left;
+}
+
+.timeline-item .content h3 {
+    font-size: 1.2rem;
+    color: #ff6f00;
+    margin-bottom: 10px;
+}
+
+.timeline-item .content p {
+    font-size: 0.6rem;
+}
+
+/* Vertical Line */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 85%;
+    background: linear-gradient(to bottom, #ff6f00, #f9a825);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Circle Marker */
+.timeline-item .circle {
+    width: 15px;
+    height: 15px;
+    background: #ff6f00;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+    .timeline-container {
+        padding: 30px 10px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-item .content {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .timeline-container::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Media Queries for Medium Devices (750px to 1199px) */
+@media (min-width: 750px) and (max-width: 1199px) {
+    .timeline-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .timeline-item.left .content {
+        width: 45%;
+        text-align: left;
+    }
+
+    .timeline-item.right .content {
+        width: 45%;
+        text-align: right;
+    }
+
+    .timeline-container::before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(to bottom, #ff6f00, #f9a825);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        margin-bottom: 25px;
+    }
+}
+
+/* Media Queries for Large Devices */
+@media (min-width: 1200px) {
+    .timeline-item.left {
+        justify-content: flex-start;
+    }
+
+    .timeline-item.right {
+        justify-content: flex-end;
+    }
+
+    .timeline-container::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
+* {
+
+    box-sizing: border-box;
+}
+
+
+
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features {
+    text-align: center;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ddd;
+    line-height: 1.6;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+.features h1 {
+    font-size: 10px;
+    margin-bottom: 20px;
+    color: silver;
+}
+
+
+.feature-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    animation: scaleUp 1s ease-out;
+}
+
+.icon1 {
+    background-color: #faf7e8;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.fas {
+    font-size: 2rem;
+    /* Adjust size */
+    color: #ff8c00;
+    /* Adjust color */
+
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #ff8c00;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+
+
+
+    padding: 10px 20px;
+    height: 40px;
+    width: 50px;
+    color: #ff9f00;
+    border-radius: 20px;
+    border-color: #ff9f00;
+    background-color: #ffffff;
+}
+
+.button:hover {
+    background-color: #ff7000;
+}
+
+.products {
+    background-color: #1c1c1c;
+    padding: 40px 0;
+}
+
+.product-item {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: bounceIn 1s ease-out;
+}
+
+.product-item h2 {
+    font-size: 22px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.product-buttons {
+    display: flex;
+
+
+    text-size: 10px;
+}
+
+.product-buttons .button {
+    width: 48%;
+}
+
+.product-buttons .buy-now {
+    background-color: #ff8c00;
+}
+
+.product-buttons .buy-now:hover {
+    background-color: #ff7000;
+}
+
+/* Animations */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0.6;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 750px) {
+    .feature-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1199px) {
+    .features h1 {
+        font-size: 20px;
+    }
+
+    .feature-items {
+        flex-wrap: wrap;
+    }
+
+    .feature-item {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    .product-item {
+        width: 45%;
+        margin: 10px 2.5%;
+    }
+
+    .product-buttons .button {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .features h1 {
+        font-size: 24px;
+    }
+
+    .feature-items {
+        flex-wrap: nowrap;
+    }
+
+    .feature-item {
+        width: 23%;
+    }
+
+    .product-item {
+        width: 23%;
+        margin: 1%;
+    }
+
+    .product-buttons .button {
+        width: 48%;
+    }
+}
+
+
+/* Bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Add a class to be triggered by the intersection observer */
+.feature-item,
+.product-item {
+    opacity: 0;
+    /* Hide initially */
+    transform: translateY(50px);
+    /* Move down initially */
+    transition: transform 0.5s, opacity 0.5s;
+    /* Smooth transition */
+}
+
+/* Class to apply the bounce animation */
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    animation: bounce 1s ease-out forwards;
+}
+
+.exploremorehead {
+    font-size: 22px;
+    color: gold;
+    margin-bottom: 10px;
+    text-align: center;
+}
