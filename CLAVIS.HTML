@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .image-carousel-wrapper {
+            position: relative;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            background-color: #eaeaea;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            flex: 0 0 33.33%;
+            padding: 20px;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            padding: 40px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-slide h1 {
+            font-size: 20px;
+        }
+
+        .carousel-control-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50%;
+        }
+
+        .carousel-control-btn.left {
+            left: 10px;
+        }
+
+        .carousel-control-btn.right {
+            right: 10px;
+        }
+
+        @media (max-width: 992px) {
+            .carousel-slide {
+                flex: 0 0 50%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-slide {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.ibb.co/Vm6VxRr/clavis.jpg" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#wcuSection" id="navItem1">
+                        Why Choose Us?
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#featuresSection" id="navItem2">Features</a>
+                    <a class="nav-link" href="#productsSection" id="navItem3">Products</a>
+                    <a class="nav-link" href="#exploreMenuSection" id="navItem4">Explore More</a>
+                    <a class="nav-link" href="#foundersSection" id="navItem4">Founders</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem5">Follow Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="wcuSection">
+        <div class="row">
+            <div class="col-12   ">
+                <img src="https://i.ibb.co/L1fnfkF/IMG-20241123-WA0011.jpg" class="w-100" />
+                <div class="banner-section-bg-container p-3 d-flex justify-content-center flex-column">
+                    <div class="text-center">
+
+                        <p class="banner-caption ">Creating a future where every Vechile is SMART and every rider is SAFE</p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-container ">
+                    <div class="timeline-item left">
+                        <div class="circle"></div>
+                        <div class="content">
+                            <h3>35000+</h3>
+                            <p>Bikes converted into<br> SMART Bikes</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="circle"></div>
+                        <div class="content">
+                            <h3>20cr+ kms</h3>
+                            <p>clocked by Clavis users</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="circle"></div>
+                        <div class="content">
+                            <h3>12000+</h3>
+                            <p>accidents reported with<br> the help of Clavis</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="circle"></div>
+                        <div class="content">
+                            <h3>130+</h3>
+                            <p>vechile theft prevented <br>with help of Clavis</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="circle"></div>
+                        <div class="content">
+                            <h3>5+ Years</h3>
+                            <p>of dedicated service<br> to nation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="features" id="featuresSection">
+        <h2 class="menu-section-heading text-center">Features</h2>
+        <div class="container1">
+            <h1>Our Clavis IoT GPS tracker is equipped with cutting-edge features to elevate your bike's safety and smart capabilities.</h1>
+
+            <div class="feature-items">
+                <div class="feature-item ">
+                    <i class="fas fa-map-marker-alt icon1"></i>
+                    <h3>Live Tracking</h3>
+                    <p>Stay connected and in control with real-time tracking, ensuring you're always aware of your vehicle's location.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tachometer-alt icon1"></i>
+                    <h3>Over-Speed Alert</h3>
+                    <p>Never miss a beat when it comes to your vehicle's speed. Set your preferred speed limit and receive instant alerts, keeping you informed and in control at all times.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-car-crash icon1"></i>
+                    <h3>Accident Alert</h3>
+                    <p>Rest assured with prompt accident alerts via SMS, ensuring quick response and necessary assistance during critical moments.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-lock icon1"></i>
+                    <h3>Theft Alert</h3>
+                    <p>Safeguard your vehicle with advanced theft detection mechanisms, offering peace of mind and enhanced security.</p>
+                </div>
+            </div>
+            <div class="button-container ">
+                <a href="#" class="button">Know more</a>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="productsSection">
+        <h1 class="menu-section-heading text-center">Products</h1>
+        <div class="container">
+            <div class="row">
+                <div class="product-item">
+                    <h2>Clavis Lite</h2>
+                    <p>Best Anti-Theft Smart GPS Tracker</p>
+                    <img src="https://i.ibb.co/kHP6b29/IMG-20241123-WA0043.jpg" alt="Clavis Lite">
+                    <p>Gain full control over your vehicle using remote lock & unlock functionality making it the best anti-theft GPS tracker for bikes & cars.</p>
+                    <div class="button-container ">
+                        <a href="#" class="button">Know more</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <h2>Clavis Pro</h2>
+                    <p>Smart GPS Tracker for Bike and Car</p>
+                    <img src="https://i.ibb.co/QJ4P2hd/IMG-20241123-WA0053.jpg" alt="Clavis Pro">
+                    <p>Clavis wired GPS device for bike and car converts your normal vehicle into a smart & connected vehicle with its intelligent features.</p>
+                    <div class="button-container ">
+                        <a href="#" class="button">Know more</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <h2>Clavis GO</h2>
+                    <p>One Device, Countless Tracking</p>
+                    <img src="https://i.ibb.co/K9gzHd2/IMG-20241123-WA0048.jpg" alt="Ajjas GO">
+                    <p>Clavis Go is the ultimate tracking solution for those who need to keep tabs on anything, from vehicles to valuable assets.</p>
+                    <div class="button-container ">
+                        <a href="#" class="button">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading text-center">Explore More</h1>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <h1 class="exploremorehead">Track your Car</h1>
+                        <img src="https://i.ibb.co/GVZ6Mft/IMG-20241123-WA0017.jpg" class="menu-item-image w-100" />
+                        <p class="menu-card-title">Stay in constant awareness of your car's location,whether seeking theft protection,or simply need a convenient reminder of where you parked.</p>
+                        <a href="" class="menu-item-link">
+                            more
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4  ">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <h1 class="exploremorehead">Track your bike</h1>
+                        <img src="https://i.ibb.co/GRcs3PL/IMG-20241123-WA0056.jpg" class="menu-item-image w-100" />
+                        <p class="menu-card-title">Protect your beloved motorcycle from theft with our comprehensive and reliable security solutions,keeping it safe and your mind at ease.</p>
+                        <a href="" class="menu-item-link">
+                            more
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <h1 class="exploremorehead">Clavis for EV OEMs</h1>
+                        <img src="https://i.ibb.co/tCQyBHp/IMG-20241123-WA0064.jpg" class="menu-item-image w-100" />
+                        <p class="menu-card-title"> Experience awe-inspiring innovation with our advanced analytics panel,delving into the depths of your electric vechiles(EVs) to capture over 80 invaluable data parameters</p>
+                        <a href="" class="menu-item-link">
+                            more
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foundersSection">
+        <h1 class="menu-section-heading text-center ">Founders</h1>
+        <div class="image-carousel-wrapper">
+
+            <button class="carousel-control-btn left" id="prevSlideBtn"><i class="fas fa-chevron-left"></i></button>
+            <div class="image-carousel" id="carouselContainer">
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/tCQyBHp/IMG-20241123-WA0064.jpg" alt="Image 1">
+                    <h1>Parushuram M</h1>
+                    <p>Technical head</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/tCQyBHp/IMG-20241123-WA0064.jpg" alt="Image 2">
+                    <h1>Parushuram M</h1>
+                    <p>Technical head</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/tCQyBHp/IMG-20241123-WA0064.jpg" alt="Image 3">
+                    <h1>Parushuram M</h1>
+                    <p>Technical head</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/tCQyBHp/IMG-20241123-WA0064.jpg" alt="Image 4">
+                    <h1>Parushuram M</h1>
+                    <p>Technical head</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/tCQyBHp/IMG-20241123-WA0064.jpg" alt="Image 5">
+                    <h1>Parushuram M</h1>
+                    <p>Technical head</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/tCQyBHp/IMG-20241123-WA0064.jpg" alt="Image 6">
+                    <h1>Parushuram M</h1>
+                    <p>Technical head</p>
+                </div>
+            </div>
+            <button class="carousel-control-btn right" id="nextSlideBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading text-center ">Follow Us</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center">
+
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-linkedin icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-instagram icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-facebook icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://i.ibb.co/Vm6VxRr/clavis.jpg" class="food-munch-logo" />
+                    <h1 class="footer-section-mail-id">Clavistheftprotection.com</h1>
+                    <p class="footer-section-address">
+                        Mysore,Karnataka,India
+                    </p>
+                    <p class="footer-section-address">
+                        website is developed by <a href="https://www.linkedin.com/in/parushuram-malagaddi"> Parushuram M </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("resize", function() {
+            adjustLayout();
+        });
+
+        function adjustLayout() {
+            const width = window.innerWidth;
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            if (width < 768) {
+                // For small screens, make everything stacked vertically
+                timelineItems.forEach(item => {
+                    item.style.flexDirection = 'column';
+                    item.querySelector('.content').style.width = '100%';
+                });
+            } else if (width >= 768 && width < 1200) {
+                // For medium screens, adjust the layout to left and right alignments
+                timelineItems.forEach(item => {
+                    item.style.flexDirection = 'row';
+                    item.querySelector('.content').style.width = '45%';
+                });
+            } else {
+                // For large screens, revert to original layout
+                timelineItems.forEach(item => {
+                    item.style.flexDirection = 'row';
+                    item.querySelector('.content').style.width = '45%';
+                });
+            }
+        }
+
+        // Initial layout adjustment on page load
+        adjustLayout();
+    </script>
+    <script>
+        const carouselContainer = document.getElementById("carouselContainer");
+        const nextSlideBtn = document.getElementById("nextSlideBtn");
+        const prevSlideBtn = document.getElementById("prevSlideBtn");
+
+        let currentIndex = 0;
+
+        function updateCarouselPosition() {
+            const slideWidth = carouselContainer.children[0].offsetWidth;
+            const gap = parseInt(window.getComputedStyle(carouselContainer).gap) || 0;
+            carouselContainer.style.transform = `translateX(-${(slideWidth + gap) * currentIndex}px)`;
+        }
+
+        nextSlideBtn.addEventListener("click", () => {
+            const visibleSlides = Math.round(carouselContainer.offsetWidth / carouselContainer.children[0].offsetWidth);
+            if (currentIndex < carouselContainer.children.length - visibleSlides) {
+                currentIndex++;
+                updateCarouselPosition();
+            }
+        });
+
+        prevSlideBtn.addEventListener("click", () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarouselPosition();
+            }
+        });
+
+        window.addEventListener("resize", updateCarouselPosition);
+    </script>
+</body>
+
+</html>
